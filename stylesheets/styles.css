@@ -284,11 +284,11 @@ hr {
 /* Image */
 .floating-image img {
   visibility: hidden;
-  height: 150px;
+  height: 250px;
   width: auto;
   position: absolute;
   z-index: 1;
-  top: -150px;
+  top: -250px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
