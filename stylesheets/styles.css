@@ -5,7 +5,7 @@ body {
   font-weight: 300;
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 * {
@@ -26,7 +26,7 @@ h5,
 h6 {
   color: black;
   margin: 0 0 20px;
-  font-family: "Courier Prime", cursive;
+  font-family: "Courier Prime";
 }
 
 .highlight {
@@ -64,11 +64,11 @@ li {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h3,
@@ -277,8 +277,8 @@ hr {
   font-weight: 300;
   text-decoration: underline;
   text-decoration-style: dotted;
-  font-size: 17px;
-  font-family: "Cedarville Cursive", cursive;
+  font-size: 16px;
+  font-family: "Open Sans", cursive;
 }
 
 /* Image */
