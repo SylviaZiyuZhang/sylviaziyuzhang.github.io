@@ -1,0 +1,90 @@
+/* --- scroll gallery --- */
+.scroll-gallery {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    padding: 0;
+    margin: 0;
+}
+
+.scroll-container {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+.scroll-container > div {
+    flex: 0 0 auto;
+    max-width: none;
+}
+
+.scroll-container img {
+    display: block;
+    height: 225px;
+    width: auto;
+    margin-right: 0;
+}
+
+.scroll-container img:hover {
+    transform: scale(1.01);
+}
+
+.scroll-gallery::-webkit-scrollbar {
+    height: 5px;
+}
+
+.scroll-gallery::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.scroll-gallery::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Optional: Adjust image height on smaller screens */
+@media (max-width: 480px) {
+    .scroll-container img {
+         height: 150px;
+    }
+}
+
+/* --- grid gallery --- */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.artwork-container {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.square-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+}
+
+.artwork-details {
+    font-size: 0.8em;
+    overflow: visible;
+    white-space: normal;
+    position: relative;
+    z-index: 1;
+}
+
+.artwork-description {
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+}

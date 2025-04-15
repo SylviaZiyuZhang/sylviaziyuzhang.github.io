@@ -46,6 +46,23 @@ h6 {
   z-index: -1;
 }
 
+.highlight-matcha {
+  position: relative;
+  display: inline;
+}
+
+.highlight-matcha::before {
+  content: "";
+  position: absolute;
+  width: calc(100%);
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  height: 35%;
+  background-color: rgba(167, 199, 108, 1);
+  z-index: -1;
+}
+
 ul,
 ol,
 table,
@@ -198,7 +215,7 @@ hr {
   float: left;
 }
 
-#socials {
+.socials {
   padding-top: 9px;
   float: right;
 }
@@ -299,4 +316,74 @@ hr {
 .floating-image:hover img {
   visibility: visible;
   opacity: 1;
+}
+
+#matcha {
+  text-align: left;
+}
+
+#matcha ol {
+  list-style-type: decimal;
+  padding-left: 1.5em; /* Optional, helps visually indent */
+}
+
+#matcha li {
+  text-align: left; /* Redundant if #matcha is already left-aligned, but just in case */
+  margin-bottom: 0.5em;
+}
+
+#matcha p {
+  text-indent: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#matcha li p {
+  margin-top: 0.5em;
+}
+
+
+.caption {
+  text-align: center;
+  font-size: 0.8em;
+  color: #555; /* Optional: lighter color for a caption feel */
+  margin-top: 0.5em;
+}
+
+#nav {
+  float: right;
+  padding-top: 10px;
+}
+
+#nav a {
+  text-decoration: underline;
+}
+
+.icon i {
+  font-size: 18px; /* or 1.5em, etc. */
+}
+
+.icon i:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.snapshots {
+  margin: 0 0 20px;
+  padding-left: 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px 0;
+  }
+
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  h3 { font-size: 18px; }
+}
+
+#papers {
+  padding-left: 10px;
 }
