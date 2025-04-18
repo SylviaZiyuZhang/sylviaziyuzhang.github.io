@@ -8,14 +8,29 @@ const images = [
         date: '2024',
     },
     {
+        file: '2025-cherry-blossoms.JPG',
+        name: 'Cherry Blossoms',
+        date: '2025',
+    },
+    {
         file: '2024-strawberry.JPG',
         name: 'Strawberry',
         date: '2024',
     },
     {
+        file: '2025-newbury.JPG',
+        name: 'Newbury',
+        date: '2025',
+    },
+    {
         file: '2024-kyoto.JPG',
         name: 'Arashiyama',
         date: '2024',
+    },
+    {
+        file: '2025-tree-flowers.JPG',
+        name: 'Flowers',
+        date: '2025',
     },
     {
         file: '2024-foliage.JPG',
