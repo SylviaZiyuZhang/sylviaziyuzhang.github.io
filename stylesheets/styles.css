@@ -396,3 +396,61 @@ hr {
 #papers {
   padding-left: 10px;
 }
+
+
+/* Nav */
+#side-nav {
+  position: fixed;
+  top: 50px; /* Adjust as needed */
+  left: 30px; /* Add more padding on the left */
+  width: 200px; /* Adjust width */
+  background-color: transparent; /* Transparent background */
+  padding: 10px;
+  font-family: 'Courier Prime', monospace;
+  font-weight: bold;
+}
+
+#side-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#side-nav ul li {
+  margin-bottom: 15px;
+}
+
+#side-nav ul li a {
+  text-decoration: none;
+  color: #333; /* Adjust color as needed */
+  font-size: 14px;
+  position: relative;
+}
+
+#side-nav ul li a:hover {
+  color: #007acc; /* Adjust hover color */
+}
+
+#side-nav ul li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(193, 82, 180, 0.5); /* Same color as the highlight */
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#side-nav ul li a:hover::after {
+  transform: scaleX(1.1); /* Slightly enlarge the underline on hover */
+}
+
+/* Hide the navigation bar on narrow screens */
+@media screen and (max-width: 1040px) {
+  #side-nav {
+    display: none;
+  }
+}
