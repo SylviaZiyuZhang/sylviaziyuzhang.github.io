@@ -15,7 +15,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="google-site-verification" content="HTdgjOMrEDJmjtSxk4tzKgDTuM5wWqT_BHWwTx14NvA">
-  <title>Prashanti Anderson</title>
   <!-- styling -->
   <link rel="stylesheet" href="stylesheets/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,13 +31,13 @@
   <!-- header -->
   <section>
     <div id="title">
-      <h1>prashanti anderson</h1>
+      <h1>"Sylvia" Ziyu Zhang</h1>
     </div>
     <div class="socials">
       <div>
         <a
           class="icon"
-          href="https://scholar.google.com/citations?user=RQg7790AAAAJ&hl=en"
+          href="https://scholar.google.com/citations?user=gSPa7F0AAAAJ&hl=en"
         >
           <i
             class="fa fa-solid fa-graduation-cap"
@@ -48,7 +47,7 @@
         &nbsp;
         <a
           class="icon"
-          href="https://www.linkedin.com/in/prashanti-anderson/"
+          href="https://www.linkedin.com/in/ziyu-zhang-136109139/"
         >
           <i
             class="fa fa-brands fa-linkedin" aria-label="LinkedIn"></i>
@@ -77,16 +76,15 @@
               <a href="https://www.samuelbhopkins.com/">Sam Hopkins</a>.
               My research interests are in algorithm design, particularly from the lens
               of convex programming.
+
+              I am a third-year PhD student at MIT CSAIL. I am co-advised by Prof. Julian Shun in the Parallel Algorithms Group and Prof. Michael Cafarella in the Data Systems Group.
+              My general research interest is tackling data management problems, especially in high-dimensional vectors and unstructured data, with techniques in both algorithms design and systems implementation.
+              
             </p>
             <p>
-              Before starting my PhD I earned my BS in Computer Science from
-              <a href="https://www.cs.cmu.edu/">CMU</a>, where I was advised by
-              <a href="https://www.cs.princeton.edu/~kothari/">Pravesh Kothari</a>. 
-              I am also grateful for the mentorship of <a href="https://www.anilada.com/">Anıl Ada</a>
-              during my time as an undergraduate teaching assistant at CMU. 
+              Previously, I was working at OtterTune with Prof. Andy Pavlo on database optimization.
+              Before that, I completed my undergraduate studies at Carnegie Mellon University School of Computer Science, where I was advised by Prof. David Woodruff.
             </p>
-            <p>
-              If you'd like to chat you can reach me at <strong>paanders[at]mit[dot]edu</strong>.
           </td>
           <td>
             <img src="figs/me_circle.png">
@@ -102,7 +100,7 @@
   <section>
     <h2>
       <div class="highlight">
-        research
+        Research
       </div>
     </h2>
     <table>
@@ -114,8 +112,13 @@
         <tr>
           <td>
             <p>
-              My research interests are in designing efficient algorithms for problems in areas such as worst case approximation and robust statistics. 
-              I'm particularly interested in the power of semidefinite programming and the sum-of-squares hierarchy. 
+              My research interests currently resolve around graph-based algorithms for high dimensional vector data, in particular, clustering and approximate
+              nearest neighbor search. I care about designing highly scalable algorithms, aligning the algorithm design objective with the roles these algorithms play in data management systems, 
+              and understanding why they work/do not work under different datasets and compute situations.
+            </p>
+            <p>
+              Along the lines of exploring the intersection of graph algorithms and high dimensional vector data/unstructured data, I have also worked on refining causal graphs with observational data
+              and dimensionality reduction algorithms for general tensor networks.
             </p>
             </iframe>
           </td>
@@ -127,42 +130,149 @@
           class="fa fa-solid fa-book"
           aria-label="Google Scholar"
         ></i>
-         papers</h3>
-    <div class="paper" id="gmm-clustering">
-      <b>Dimension Reduction via Sum-of-Squares and Improved Clustering Algorithms for Non-Spherical Mixtures</b><br>
+         Publications</h3>
+    <div class="paper" id="cleann">
+      <b>CleANN: Efficient Full Dynamism in Graph-based Approximate Nearest Neighbor Search</b><br>
       <div>
         <small>
-          with 
-          <a href="https://mitalibafna.github.io/">Mitali Bafna</a>,
-          <a href="https://raresbuhai.com/">Rares Buhai</a>, 
-          <a href="https://www.cs.princeton.edu/~kothari/">Pravesh Kothari</a>, and
-          <a href="https://www.dsteurer.org/">David Steurer</a>. 
+          <a> Ziyu Zhang</a>,
+          <a> Yuanhao Wei</a>,
+          <a> Josh Engels</a>, and
+          <a> Julian Shun</a>.
           <br>
-          Preprint.
+          <b>Preprint</b>.
         </small>
       </div>
       <div class="paper-links">
         [
-        <a href="https://arxiv.org/abs/2411.12438">arXiv</a>
+        <a href="https://arxiv.org/abs/2507.19802">arXiv</a>
                 ]
       </div>
     </div>
     </iframe>
-    <div class="paper" id="private-regression">
-      <b>Sample-Optimal Private Regression in Polynomial Time</b><br>
+
+    <div class="paper" id="kramabench">
+      <b>KramaBench: A Benchmark for AI Systems on Data-to-Insight Pipelines over Data Lakes</b><br>
       <div>
         <small>
-          with 
-          <a href="https://www.aineshbakshi.com/">Ainesh Bakshi</a>,
-          <a href="https://www.mahbodmajid.com/">Mahbod Majid</a>, and
-          <a href="https://stefantiegel.com/">Stefan Tiegel</a>. 
+          <a> Eugenie Lai</a>,
+          <a> Gerardo Vitagliano</a>,
+          <a> Ziyu Zhang</a>,
+          <a> Sivaprasad Sudhir</a>,
+          <a> Om Chabra</a>,
+          <a> Anna Zeng</a>,
+          <a> Anton A. Zabreyko</a>,
+          <a> Chenning Li</a>,
+          <a> Ferdi Kossmann</a>,
+          <a> Jialin Ding</a>,
+          <a> Jun Chen</a>,
+          <a> Markos Markakis</a>,
+          <a> Matthew Russo</a>,
+          <a> Weiyang Wang</a>,
+          <a> Ziniu Wu</a>,
+          <a> Michael J. Cafarella</a>,
+          <a> Lei Cao</a>,
+          <a> Sam Madden</a>, and
+          <a> Tim Kraska</a>.
           <br>
-          <b>STOC 2025</b>.
+          <b>Preprint</b>.
         </small>
       </div>
       <div class="paper-links">
         [
-        <a href="https://arxiv.org/abs/2503.24321">arXiv</a>
+        <a href="https://arxiv.org/abs/2506.06541">arXiv</a>
+                ]
+      </div>
+    </div>
+    </iframe>
+
+    <div class="paper" id="logos">
+      <b>From Logs to Causal Inference: Diagnosing Large Systems</b><br>
+      <div>
+        <small>
+          <a> Markos Markakis</a>,
+          <a> Brit Youngmann</a>,
+          <a> Trinity Gao</a>,
+          <a> Ziyu Zhang</a>,
+          <a> Rana Shahour</a>,
+          <a> Peter Baile Chen</a>,
+          <a> Chunwei Liu</a>,
+          <a> Ibrahim Sabek</a>, and
+          <a> Michael Cafarella</a>.
+          <br>
+          <b>VLDB 2025</b>.
+        </small>
+      </div>
+      <div class="paper-links">
+        [
+        <a href="https://dl.acm.org/doi/abs/10.14778/3705829.3705836">ACM</a>
+                ]
+      </div>
+    </div>
+    </iframe>
+
+    <div class="paper" id="causal-graph-refinement">
+      <b>Press ECCS to Doubt (Your Causal Graph)</b><br>
+      <div>
+        <small>
+          <a> Markos Markakis</a>,
+          <a> Ziyu Zhang</a>,
+          <a> Rana Shahout</a>,
+          <a> Trinity Gao</a>,
+          <a> Chunwei Liu</a>,
+          <a> Ibrahim Sabek</a>, and
+          <a> Michael Cafarella</a>.
+          <br>
+          <b>SIGMOD 2024 GUIDE-AI (Best Paper Award)</b>.
+        </small>
+      </div>
+      <div class="paper-links">
+        [
+        <a href="https://dl.acm.org/doi/abs/10.1145/3665601.3669842">ACM</a>
+                ]
+      </div>
+    </div>
+  </iframe>
+    <div class="paper" id="sawmill">
+      <b>Sawmill: From Logs to Causal Diagnosis of Large Systems</b><br>
+      <div>
+        <small>
+          <a> Markos Markakis</a>,
+          <a> An Bo Chen</a>,
+          <a> Brit Youngmann</a>,
+          <a> Trinity Gao</a>,
+          <a> Ziyu Zhang</a>,
+          <a> Rana Shahour</a>,
+          <a> Peter Baile Chen</a>,
+          <a> Chunwei Liu</a>,
+          <a> Ibrahim Sabek</a>, and
+          <a> Michael Cafarella</a>.
+          <br>
+          <b>SIGMOD 2024 Demo</b>.
+        </small>
+      </div>
+      <div class="paper-links">
+        [
+        <a href="https://dl.acm.org/doi/abs/10.1145/3626246.3654731">ACM</a>
+                ]
+      </div>
+    </div>
+  </iframe>
+
+    <div class="paper" id="tensor-networks">
+      <b>Near-Linear Time and Fixed-Parameter Tractable Algorithms for Tensor Decompositions(*)</b><br>
+      <div>
+        <small>
+          <a>Arvind V. Mahankali</a>,
+          <a>David Woodruff</a>, and
+          <a>Ziyu Zhang</a>.
+          <br>
+          <b>ITCS 2024</b>.
+        </small>
+      </div>
+      <div class="paper-links">
+        [
+        <a href="https://arxiv.org/abs/2207.07417">arXiv</a>
                 ]
       </div>
     </div>
@@ -174,7 +284,7 @@
   <section>
     <h2>
       <div class="highlight">
-        teaching
+        Teaching
       </div>
     </h2>
     <table>
@@ -187,22 +297,18 @@
           <td>
             <ul>
               <li>
-                Spring 2025 @ MIT — Introduction to Algorithms (Teaching Assistant)
+                Fall 2024 — Teaching Assistant for Database Systems at MIT
               </li>
               <li>
-                Fall 2022 - Spring 2023 @ CMU — <a href="https://www.cs251.com/index.html">Great Theoretical Ideas in Computer Science</a> (Head Teaching Assistant)
+                2021 - Winter 2022 - (Head) Teaching Assistant for 15-451 Algorithms Design and Analysis at CMU
               </li>
               <li>
-                Fall 2020 - Spring 2022 @ CMU — <a href="https://www.cs251.com/index.html">Great Theoretical Ideas in Computer Science</a> (Teaching Assistant)
+                Fall 2019 - Fall 2020 Teaching Assistant for 15-151 Mathematical Foundations for Computer Science at CMU
               </li>
               <li>
-                Spring 2020 @ CMU — Principles of Imperative Programming (Teaching Assistant)
+                Spring 2019 - Teaching Assistant for 15-122 Principles of Imperative Programming at CMU
               </li>
             </ul>
-            <p>
-              I am honored to receive the <a href="https://www.cs.cmu.edu/~scsfacts/perlis.html">2023 Alan J. Perlis Undergraduate Student Teaching Award</a>
-              for my work as an undergraduate teaching assistant at CMU. 
-            </p>
           </td>
         </tr>
       </tbody>
@@ -214,7 +320,7 @@
   <section>
     <h2>
       <div class="highlight">
-        misc
+        Non-academic Stuff
       </div>
     </h2>
     <table>
@@ -227,17 +333,20 @@
           <td>
             <ul>
               <li>
-                In my free time, I enjoy going fast 8(th) in my Teamfight Tactics games. 
+                In my free time, I dance with the <a href="https://ballroom.mit.edu/">MIT Ballroom Dance Team</a> and actively attend collegiate competitions with my partner <a href="https://people.csail.mit.edu/iorzech/">Edan</a>. 
               </li>
               <li>
-                I'm also a beginner <a href="photography.html">photographer</a> and enjoy various other arts and crafts.
+                I enjoy making awesome (we think) food with <a href="https://prashantianderson.github.io/">Prashanti</a>.
               </li>
               <li>
-                I'm a big fan of matcha, you can read more about my thoughts on matcha <a href="matcha.html">here</a>. 
+                I am also an aspiring newcomer mountaineer thanks to <a href="https://fanpu.io/">Fan Pu</a> and our other friends.
+              </li>
+              <li>
+                Lastly, I am quantum entangled with the wonderful <a href="https://abigalekim.github.io/">Abigale Kim</a>.
               </li>
               <li>
                 Website template is due to 
-                <a href="https://rebeccayelin.github.io/">Rebecca Lin</a>.
+                <a href="https://prashantianderson.github.io/">Prashanti Anderson</a>.
               </li>
             </ul>
           </td>
@@ -251,7 +360,7 @@
   <!-- footer -->
   <section>
     <h4>
-      Updated April 2025.
+      Under Construction.
     </h4>
   </section>
 
